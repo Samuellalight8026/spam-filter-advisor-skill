@@ -106,5 +106,11 @@ Then `/reload-plugins`. The first command registers the catalog; the second inst
 
 ## License
 
-Prose and documentation: CC BY 4.0. `analyze_spam_samples.py`: MIT. See [LICENSE](LICENSE).
+Prose, references, and documentation: **CC BY 4.0** — see [LICENSE](LICENSE).
+`scripts/analyze_spam_samples.py`: **MIT**.
+
+Both sets of terms are stated together in
+[`skills/spam-filter-advisor/LICENSE`](skills/spam-filter-advisor/LICENSE), which travels inside
+the `.skill` package so the terms stay with the files they govern.
+
 © 2026 Paul Hess.
