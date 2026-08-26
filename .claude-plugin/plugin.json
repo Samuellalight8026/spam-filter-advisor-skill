@@ -1,0 +1,11 @@
+{
+  "name": "spam-filter-advisor",
+  "version": "1.0.0",
+  "description": "Turn a folder of saved spam into mail filter rules, ranked honestly by how likely each is to catch real mail. Checks your sample for contamination first, gives exact copy-paste strings and the field to match, and says plainly which rules will decay. Also diagnoses rules you already have.",
+  "author": {
+    "name": "Paul Hess",
+    "email": "paul@hess.club"
+  },
+  "homepage": "https://github.com/idea2go2go/spam-filter-advisor-skill",
+  "license": "CC-BY-4.0 AND MIT"
+}

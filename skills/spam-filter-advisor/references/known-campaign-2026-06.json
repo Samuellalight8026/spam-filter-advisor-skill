@@ -1,0 +1,448 @@
+{
+  "_readme": "Findings from one user's spam corpus, June 2026. Offer these as a SUPPLEMENT after analyzing the user's own samples, never as a substitute. Read the 'decay' field on each section before presenting anything from it.",
+  "provenance": {
+    "collected_by": "A prior user of this skill, from a single mailbox",
+    "date_range": "2026-06-02 to 2026-06-16",
+    "message_count": 176,
+    "campaign": "Brand-impersonation phishing: fake loyalty-point expiry, free samplers, prize shipments, and parcel-delivery notices",
+    "brands_impersonated": [
+      "Kroger",
+      "Lowe's / MyLowe's / Kobalt",
+      "Sam's Club",
+      "Ring",
+      "Walmart",
+      "ACE Hardware",
+      "Marriott",
+      "Omaha Steaks",
+      "Verizon",
+      "FedEx",
+      "Best Buy",
+      "CVS",
+      "Bass Pro / YETI",
+      "Costco",
+      "HexClad",
+      "Harbor Freight"
+    ],
+    "public_reporting": "The FTC issued a consumer alert on this pattern on 2026-04-07; McAfee and several security blogs covered it through the first half of 2026."
+  },
+  "how_to_use": {
+    "order": "Present the user's own findings first. Offer this list afterwards, as a way to catch stragglers their sample did not contain.",
+    "framing": "These came from someone else's mailbox during one window in June 2026. They are not tailored to this user and are not a substitute for their own samples.",
+    "critical": "Every string here must be copied, never retyped. Verify against the code_points field if there is any doubt.",
+    "relevance_test": "Only worth offering if the user's own analysis shows the same campaign family - loyalty points, free samplers, prize shipments, parcel notices. If their spam is a different genre entirely, skip this file."
+  },
+  "tier_1_character_substitutions": {
+    "decay": "LOW. These do not go stale. The misspelling IS the filter-evasion technique, so abandoning it would cost the operator the evasion. A string like '0maha' will never match legitimate mail in any year.",
+    "false_alarm_risk": "Effectively zero.",
+    "entries": [
+      {
+        "string": "0maha",
+        "code_points": "U+0030 U+006D U+0061 U+0068 U+0061",
+        "fields": [
+          "Subject",
+          "From"
+        ],
+        "messages": 24,
+        "resembles": "omaha",
+        "why_safe": "Deliberate lookalike substitution; no legitimate sender spells it this way."
+      },
+      {
+        "string": "1OO",
+        "code_points": "U+0031 U+004F U+004F",
+        "fields": [
+          "Subject"
+        ],
+        "messages": 17,
+        "resembles": null,
+        "why_safe": "Deliberate lookalike substitution; no legitimate sender spells it this way."
+      },
+      {
+        "string": "5OO",
+        "code_points": "U+0035 U+004F U+004F",
+        "fields": [
+          "Subject"
+        ],
+        "messages": 13,
+        "resembles": null,
+        "why_safe": "Deliberate lookalike substitution; no legitimate sender spells it this way."
+      },
+      {
+        "string": "SampIer",
+        "code_points": "U+0053 U+0061 U+006D U+0070 U+0049 U+0065 U+0072",
+        "fields": [
+          "Subject"
+        ],
+        "messages": 12,
+        "resembles": "sampler",
+        "why_safe": "Deliberate lookalike substitution; no legitimate sender spells it this way."
+      },
+      {
+        "string": "0nly",
+        "code_points": "U+0030 U+006E U+006C U+0079",
+        "fields": [
+          "Subject"
+        ],
+        "messages": 9,
+        "resembles": null,
+        "why_safe": "Deliberate lookalike substitution; no legitimate sender spells it this way."
+      },
+      {
+        "string": "WaImart",
+        "code_points": "U+0057 U+0061 U+0049 U+006D U+0061 U+0072 U+0074",
+        "fields": [
+          "From"
+        ],
+        "messages": 8,
+        "resembles": "walmart",
+        "why_safe": "Deliberate lookalike substitution; no legitimate sender spells it this way."
+      },
+      {
+        "string": "C0STC0",
+        "code_points": "U+0043 U+0030 U+0053 U+0054 U+0043 U+0030",
+        "fields": [
+          "Subject",
+          "From"
+        ],
+        "messages": 6,
+        "resembles": "costco",
+        "why_safe": "Deliberate lookalike substitution; no legitimate sender spells it this way."
+      },
+      {
+        "string": "OnIy",
+        "code_points": "U+004F U+006E U+0049 U+0079",
+        "fields": [
+          "Subject"
+        ],
+        "messages": 5,
+        "resembles": null,
+        "why_safe": "Deliberate lookalike substitution; no legitimate sender spells it this way."
+      },
+      {
+        "string": "CIub",
+        "code_points": "U+0043 U+0049 U+0075 U+0062",
+        "fields": [
+          "From"
+        ],
+        "messages": 3,
+        "resembles": "samsclub",
+        "why_safe": "Deliberate lookalike substitution; no legitimate sender spells it this way."
+      },
+      {
+        "string": "ParceI",
+        "code_points": "U+0050 U+0061 U+0072 U+0063 U+0065 U+0049",
+        "fields": [
+          "Subject"
+        ],
+        "messages": 3,
+        "resembles": "parcel",
+        "why_safe": "Deliberate lookalike substitution; no legitimate sender spells it this way."
+      },
+      {
+        "string": "pIan",
+        "code_points": "U+0070 U+0049 U+0061 U+006E",
+        "fields": [
+          "Subject"
+        ],
+        "messages": 3,
+        "resembles": null,
+        "why_safe": "Deliberate lookalike substitution; no legitimate sender spells it this way."
+      },
+      {
+        "string": "0nIy",
+        "code_points": "U+0030 U+006E U+0049 U+0079",
+        "fields": [
+          "Subject"
+        ],
+        "messages": 2,
+        "resembles": null,
+        "why_safe": "Deliberate lookalike substitution; no legitimate sender spells it this way."
+      },
+      {
+        "string": "CompIemetary",
+        "code_points": "U+0043 U+006F U+006D U+0070 U+0049 U+0065 U+006D U+0065 U+0074 U+0061 U+0072 U+0079",
+        "fields": [
+          "Subject"
+        ],
+        "messages": 2,
+        "resembles": null,
+        "why_safe": "Deliberate lookalike substitution; no legitimate sender spells it this way."
+      },
+      {
+        "string": "K0BALT",
+        "code_points": "U+004B U+0030 U+0042 U+0041 U+004C U+0054",
+        "fields": [
+          "Subject"
+        ],
+        "messages": 2,
+        "resembles": "kobalt",
+        "why_safe": "Deliberate lookalike substitution; no legitimate sender spells it this way."
+      },
+      {
+        "string": "TooI",
+        "code_points": "U+0054 U+006F U+006F U+0049",
+        "fields": [
+          "Subject",
+          "From"
+        ],
+        "messages": 2,
+        "resembles": null,
+        "why_safe": "Deliberate lookalike substitution; no legitimate sender spells it this way."
+      },
+      {
+        "string": "TooIs",
+        "code_points": "U+0054 U+006F U+006F U+0049 U+0073",
+        "fields": [
+          "From"
+        ],
+        "messages": 2,
+        "resembles": null,
+        "why_safe": "Deliberate lookalike substitution; no legitimate sender spells it this way."
+      },
+      {
+        "string": "0Maha",
+        "code_points": "U+0030 U+004D U+0061 U+0068 U+0061",
+        "fields": [
+          "From"
+        ],
+        "messages": 1,
+        "resembles": "omaha",
+        "why_safe": "Deliberate lookalike substitution; no legitimate sender spells it this way."
+      },
+      {
+        "string": "0mahaSteaks",
+        "code_points": "U+0030 U+006D U+0061 U+0068 U+0061 U+0053 U+0074 U+0065 U+0061 U+006B U+0073",
+        "fields": [
+          "From"
+        ],
+        "messages": 1,
+        "resembles": "omaha",
+        "why_safe": "Deliberate lookalike substitution; no legitimate sender spells it this way."
+      },
+      {
+        "string": "15O",
+        "code_points": "U+0031 U+0035 U+004F",
+        "fields": [
+          "Subject"
+        ],
+        "messages": 1,
+        "resembles": null,
+        "why_safe": "Deliberate lookalike substitution; no legitimate sender spells it this way."
+      },
+      {
+        "string": "3OO",
+        "code_points": "U+0033 U+004F U+004F",
+        "fields": [
+          "Subject"
+        ],
+        "messages": 1,
+        "resembles": null,
+        "why_safe": "Deliberate lookalike substitution; no legitimate sender spells it this way."
+      },
+      {
+        "string": "AceIsToo",
+        "code_points": "U+0041 U+0063 U+0065 U+0049 U+0073 U+0054 U+006F U+006F",
+        "fields": [
+          "From"
+        ],
+        "messages": 1,
+        "resembles": null,
+        "why_safe": "Deliberate lookalike substitution; no legitimate sender spells it this way."
+      },
+      {
+        "string": "HelpfuI",
+        "code_points": "U+0048 U+0065 U+006C U+0070 U+0066 U+0075 U+0049",
+        "fields": [
+          "From"
+        ],
+        "messages": 1,
+        "resembles": null,
+        "why_safe": "Deliberate lookalike substitution; no legitimate sender spells it this way."
+      },
+      {
+        "string": "ParcI",
+        "code_points": "U+0050 U+0061 U+0072 U+0063 U+0049",
+        "fields": [
+          "From"
+        ],
+        "messages": 1,
+        "resembles": null,
+        "why_safe": "Deliberate lookalike substitution; no legitimate sender spells it this way."
+      },
+      {
+        "string": "SampIers",
+        "code_points": "U+0053 U+0061 U+006D U+0070 U+0049 U+0065 U+0072 U+0073",
+        "fields": [
+          "Subject"
+        ],
+        "messages": 1,
+        "resembles": "sampler",
+        "why_safe": "Deliberate lookalike substitution; no legitimate sender spells it this way."
+      },
+      {
+        "string": "seIected",
+        "code_points": "U+0073 U+0065 U+0049 U+0065 U+0063 U+0074 U+0065 U+0064",
+        "fields": [
+          "Subject"
+        ],
+        "messages": 1,
+        "resembles": null,
+        "why_safe": "Deliberate lookalike substitution; no legitimate sender spells it this way."
+      }
+    ]
+  },
+  "tier_2_misspellings": {
+    "decay": "LOW-MODERATE. Copy gets rewritten between campaign waves more often than the character tricks do, but a brand misspelling stays safe to filter on whenever it does appear.",
+    "false_alarm_risk": "Very low for brand names. Slightly higher for ordinary words, since a hurried human might type the same error.",
+    "entries": [
+      {
+        "string": "Marriot",
+        "code_points": "U+004D U+0061 U+0072 U+0072 U+0069 U+006F U+0074",
+        "fields": [
+          "From",
+          "Subject"
+        ],
+        "messages": 21,
+        "resembles": "marriott",
+        "kind": "brand"
+      },
+      {
+        "string": "Menbership",
+        "code_points": "U+004D U+0065 U+006E U+0062 U+0065 U+0072 U+0073 U+0068 U+0069 U+0070",
+        "fields": [
+          "Subject"
+        ],
+        "messages": 5,
+        "resembles": "membership",
+        "kind": "brand"
+      },
+      {
+        "string": "CompIemetary",
+        "code_points": "U+0043 U+006F U+006D U+0070 U+0049 U+0065 U+006D U+0065 U+0074 U+0061 U+0072 U+0079",
+        "fields": [
+          "Subject"
+        ],
+        "messages": 2,
+        "resembles": "complementary",
+        "kind": "common-word"
+      },
+      {
+        "string": "MyLowe",
+        "code_points": "U+004D U+0079 U+004C U+006F U+0077 U+0065",
+        "fields": [
+          "Subject"
+        ],
+        "messages": 1,
+        "resembles": "mylowes",
+        "kind": "brand"
+      },
+      {
+        "string": "ParcI",
+        "code_points": "U+0050 U+0061 U+0072 U+0063 U+0049",
+        "fields": [
+          "From"
+        ],
+        "messages": 1,
+        "resembles": "parcel",
+        "kind": "brand"
+      }
+    ]
+  },
+  "tier_3_ip_blocks": {
+    "decay": "HIGH. Assume these are dead. They were live for days to weeks in June 2026 and the operators rotated off them repeatedly even within that window. Present as historical context, not as rules to install.",
+    "false_alarm_risk": "Low while a block is genuinely in use, but these blocks may since have been reassigned to legitimate senders - which is exactly why any IP rule needs a second ANDed condition.",
+    "requirement": "Never recommend one of these alone. Pair with a spam-score condition using ALL / AND.",
+    "entries": [
+      {
+        "prefix": "162.217.160.",
+        "messages": 35
+      },
+      {
+        "prefix": "162.217.161.",
+        "messages": 35
+      },
+      {
+        "prefix": "198.62.1.",
+        "messages": 25
+      },
+      {
+        "prefix": "198.62.0.",
+        "messages": 21
+      },
+      {
+        "prefix": "93.92.74.",
+        "messages": 7
+      },
+      {
+        "prefix": "93.92.76.",
+        "messages": 5
+      },
+      {
+        "prefix": "93.92.77.",
+        "messages": 4
+      },
+      {
+        "prefix": "93.92.73.",
+        "messages": 3
+      },
+      {
+        "prefix": "38.145.199.",
+        "messages": 3
+      },
+      {
+        "prefix": "93.92.72.",
+        "messages": 2
+      },
+      {
+        "prefix": "92.118.26.",
+        "messages": 2
+      },
+      {
+        "prefix": "38.145.212.",
+        "messages": 2
+      },
+      {
+        "prefix": "103.85.28.",
+        "messages": 2
+      },
+      {
+        "prefix": "157.254.221.",
+        "messages": 2
+      },
+      {
+        "prefix": "137.59.53.",
+        "messages": 2
+      }
+    ]
+  },
+  "tier_4_flag_but_test": {
+    "dkim_selector_prefix": {
+      "finding": "167 of 168 distinct DKIM selectors began with 'mta' followed by ~11 random characters, across otherwise unrelated burner domains.",
+      "why_not_recommended": "A spam-only corpus cannot tell you whether the user's own legitimate mail also uses mta-prefixed selectors. Some mail platforms plausibly do.",
+      "test_first": "Scan a random cross-section of the user's ordinary inbox for DKIM selectors starting with 'mta' before recommending."
+    },
+    "cheap_gtlds": {
+      "finding": "Sender domains clustered on inexpensive new gTLDs: .garden, .skin, .lat, .bond, .property, .beer, .living, .space",
+      "why_not_recommended": "Legitimate businesses use these too. Broad and permanent in exchange for catching what Tier 1 already catches."
+    }
+  },
+  "campaign_profile": {
+    "note": "Useful for recognizing the same campaign in a new sample, not for building rules.",
+    "burner_domains": "168 distinct sender domains across 176 messages - roughly one per message, so the domain itself is never filterable.",
+    "list_unsubscribe_present": 174,
+    "lure_types": [
+      "loyalty points expiring today/tomorrow",
+      "free steak sampler, limited quantity remaining",
+      "prize shipment already in transit (tool set, doorbell, wagon)",
+      "gift card or voucher from a recent visit",
+      "parcel lost or being returned to sender",
+      "membership rules changing"
+    ],
+    "urgency_markers": [
+      "today only",
+      "expires at midnight",
+      "only 500 left",
+      "final call",
+      "tomorrow"
+    ]
+  }
+}

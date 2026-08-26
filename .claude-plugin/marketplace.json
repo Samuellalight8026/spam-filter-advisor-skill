@@ -1,0 +1,19 @@
+{
+  "name": "spam-filter-advisor",
+  "description": "Home of the Spam Filter Advisor skill: build mail filter rules from your own spam samples, ranked by how likely each one is to catch real mail.",
+  "owner": {
+    "name": "Paul Hess",
+    "email": "paul@hess.club"
+  },
+  "plugins": [
+    {
+      "name": "spam-filter-advisor",
+      "source": "./",
+      "description": "A Claude skill that analyzes saved spam and recommends mail filter rules ranked by false-alarm risk.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Paul Hess"
+      }
+    }
+  ]
+}
